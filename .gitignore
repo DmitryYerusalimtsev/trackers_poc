@@ -1,0 +1,6 @@
+/.idea/
+/.venv/
+yolov8n.pt
+yolov8x.pt
+osnet_x0_25_msmt17.pt
+yolov9e-seg.pt

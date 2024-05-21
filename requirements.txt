@@ -1,0 +1,7 @@
+opencv-python
+ultralytics
+boxmot
+supervision==0.1.0
+pathlib
+sahi
+numpy
