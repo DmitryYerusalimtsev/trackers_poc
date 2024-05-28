@@ -63,4 +63,4 @@ if __name__ == "__main__":
     cam1 = cv2.imread("./sample_image/cam0_2.png")
     output0 = feature_extraction.predict_img(cam0)[0]
     output1 = feature_extraction.predict_img(cam1)[0]
-    print(distance.cosine(output0, output1))
+    print(distance.directed_hausdorff(output0, output1))

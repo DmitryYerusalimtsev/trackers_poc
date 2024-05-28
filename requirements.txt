@@ -1,12 +1,14 @@
 opencv-python
 ultralytics
+dill
 boxmot
 supervision==0.1.0
 pathlib
 sahi
 numpy
 onnxruntime
-onnxruntime-gpu
+#onnxruntime-gpu
 gdown
 albumentations
 scipy
+matplotlib
