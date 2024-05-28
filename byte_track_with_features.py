@@ -36,7 +36,7 @@ def compare_object_with_known(obj_features):
     for known_object in known_objects:
         dist, _, _ = distance.directed_hausdorff(known_object.features, obj_features)
 
-        if dist < 10:  # the same
+        if dist < 12.5:  # the same
             return known_object.id
 
     if len(known_objects) == 0:
@@ -118,7 +118,7 @@ if __name__ == '__main__':
                     cls = boxes.cls[i].tolist()
                     tx, ty, bx, by = boxes.xyxy[i].tolist()
 
-                    if conf > 0.8:
+                    if conf > 0.83:
                         seg_points = masks.xy[i]
 
                         # Get the bounding box coordinates
