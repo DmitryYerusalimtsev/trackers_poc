@@ -121,12 +121,6 @@ if __name__ == '__main__':
                     if conf > 0.83:
                         seg_points = masks.xy[i]
 
-                        # Get the bounding box coordinates
-                        # x, y, w, h = map(lambda f: int(f), boxes.xywh[i].tolist())
-
-                        # Crop the region of interest
-                        # cropped_frame = frame[y:y + h, x:x + w]
-
                         cropped_object = crop_object(frame, seg_points)
 
                         # plt.imshow(cropped_object), plt.show()
