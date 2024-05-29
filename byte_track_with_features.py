@@ -123,8 +123,6 @@ if __name__ == '__main__':
 
                         cropped_object = crop_object(frame, seg_points)
 
-                        # plt.imshow(cropped_object), plt.show()
-
                         # Detected features
                         object_features = feature_extraction.predict_img(cropped_object)[0]
 
